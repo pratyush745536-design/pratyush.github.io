@@ -1,68 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Pratyush Kumar | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratyush Portfolio</title>
   <style>
     body {
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background: #0f172a;
-      color: white;
+      background: #f5f7fa;
+      color: #333;
     }
-    header {
-      padding: 40px;
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #0ea5a4;
+    }
+
+    .hero {
       text-align: center;
-      background: #1e293b;
+      padding: 30px 0;
     }
-    section {
-      padding: 30px;
+
+    .hero img {
+      width: 140px;
+      border-radius: 50%;
+      border: 4px solid #0ea5a4;
     }
-    h2 {
-      color: #38bdf8;
-    }
-    <img scr="project1.jpg" width="300">{
-      background: #1e293b;
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+      background: white;
       padding: 15px;
-      margin-top: 10px;
       border-radius: 10px;
     }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0f2f1;
+      padding: 5px 10px;
+      margin: 5px 5px 0 0;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Pratyush Kumar</h1>
-  <p>Aspiring Tech Builder | Arduino & Embedded Systems</p>
-</header>
+<div class="container">
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    I am passionate about building real-world technology solutions.
-    I have been working with Arduino since class 8 and enjoy solving practical problems.
-  </p>
-</section>
+  <!-- HERO -->
+  <div class="hero">
+    <img src="profile.jpg" alt="Profile">
+    <h1>Building the future, one project at a time</h1>
+    <p>Student innovator focused on Robotics, IoT & real-world problem solving</p>
+  </div>
 
-<section>
-  <h2>Projects</h2>
-  <div class="project">
-    <h3>Smart Gas Stove Safety System</h3>
+  <!-- STATS -->
+  <div class="stats">
+    <div><b>25+</b><br>Projects</div>
+    <div><b>15+</b><br>Awards</div>
+    <div><b>20+</b><br>Competitions</div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="section">
+    <h2>About Me</h2>
     <p>
-      A safety-focused system that prevents gas leakage accidents using sensors and automation.
-      Includes passcode protection, gas detection, auto shut-off, and alert mechanisms.
+      Hi, I am Pratyush, a passionate innovator working on robotics and smart systems.
+      I love building real-world solutions that improve safety and everyday life.
     </p>
   </div>
-</section>
 
-<section>
-  <h2>Skills</h2>
-  <p>Arduino, Sensors, Basic Electronics, Problem Solving</p>
-</section>
+  <!-- PROJECTS -->
+  <div class="section">
+    <h2>Projects</h2>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: your-email@gmail.com</p>
-</section>
+    <div class="card">
+      <h3>Smart Gas Stove</h3>
+      <p><b>Problem:</b> Gas leaks can cause serious accidents</p>
+      <p><b>Solution:</b> Password-based safety system with gas detection</p>
+      <p><b>Impact:</b> Prevents accidents & improves home safety</p>
+      <div class="tag">IoT</div>
+      <div class="tag">Arduino</div>
+      <img src="project1.jpg" alt="Project">
+    </div>
+
+    <div class="card">
+      <h3>Emergency Power Bank</h3>
+      <p><b>Problem:</b> No power in emergencies</p>
+      <p><b>Solution:</b> Generates electricity from motion</p>
+      <p><b>Impact:</b> Portable power solution</p>
+      <img src="project2.jpg">
+    </div>
+
+  </div>
+
+  <!-- CERTIFICATES -->
+  <div class="section">
+    <h2>Certificates</h2>
+
+    <div class="card">
+      <img src="cert1.jpg">
+    </div>
+
+    <div class="card">
+      <img src="cert2.jpg">
+    </div>
+
+  </div>
+
+</div>
 
 </body>
 </html>
